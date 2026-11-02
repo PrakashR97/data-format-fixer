@@ -1,0 +1,36 @@
+# Secrets (keep the template)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node / frontend
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# Logs and OS files
+*.log
+npm-debug.log*
+.DS_Store
+
+# Editor
+.idea/
+.vscode/
+
+# Uploaded / generated files and private datasets.
+# The app keeps uploads in the system temp folder, but these guard against accidents.
+uploads/
+tmp/
+*_corrected.xlsx
+private/
+# The one synthetic demo file is allowed:
+!samples/sample_export.xlsx
